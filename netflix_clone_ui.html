@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #141414;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .logo {
+      color: red;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .banner {
+      background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/9e716c8b-18fc-4147-a84b-2c9c45a65cb0/f6d5e303-f7b7-4e35-85a8-8b47393e9066/IN-en-20240603-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .banner h1 {
+      font-size: 3rem;
+      max-width: 600px;
+    }
+    .row {
+      margin: 20px;
+    }
+    .row h2 {
+      margin-left: 10px;
+    }
+    .row-posters {
+      display: flex;
+      overflow-x: auto;
+      padding: 10px;
+    }
+    .row-posters img {
+      width: 200px;
+      object-fit: contain;
+      margin-right: 10px;
+      transition: transform 0.2s;
+      border-radius: 4px;
+    }
+    .row-posters img:hover {
+      transform: scale(1.08);
+    }
+    footer {
+      background-color: #000;
+      color: #777;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">NETFLIX</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">New & Popular</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h1>Unlimited movies, TV shows and more.</h1>
+  </section>
+
+  <section class="row">
+    <h2>Trending Now</h2>
+    <div class="row-posters">
+      <img src="https://via.placeholder.com/200x300?text=Movie+1" alt="Movie 1" />
+      <img src="https://via.placeholder.com/200x300?text=Movie+2" alt="Movie 2" />
+      <img src="https://via.placeholder.com/200x300?text=Movie+3" alt="Movie 3" />
+      <img src="https://via.placeholder.com/200x300?text=Movie+4" alt="Movie 4" />
+      <img src="https://via.placeholder.com/200x300?text=Movie+5" alt="Movie 5" />
+      <img src="https://via.placeholder.com/200x300?text=Movie+6" alt="Movie 6" />
+    </div>
+  </section>
+
+  <footer>
+    <p>Netflix Clone UI &copy; 2025</p>
+  </footer>
+</body>
+</html>
